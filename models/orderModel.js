@@ -49,6 +49,7 @@ const orderSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: "Product",
         required: true,
+        default: "0",
       },
     },
   ],
@@ -56,6 +57,7 @@ const orderSchema = new mongoose.Schema({
     type: mongoose.Schema.ObjectId,
     ref: "User",
     required: true,
+    default: "0",
   },
   paymentInfo: {
     id: {
