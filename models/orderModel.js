@@ -61,7 +61,7 @@ const orderSchema = new mongoose.Schema({
     id: {
       type: String,
       required: true,
-      default: "0",
+      default: 0,
     },
     status: {
       type: String,
